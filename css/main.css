@@ -1,0 +1,23 @@
+:root {
+  --primary: #0B93F6;
+  --secondary: #FFFFFF;
+  --left: 0;
+  --top: 0;
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--secondary);
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: "Dosis", sans-serif;
+  clip-path: url("#bubble");
+}
+
+#bubble polygon {
+  transform: translate3d(calc(var(--left) - 48px), calc(var(--top) - 93px), 0);
+}
+
+p {
+  cursor: default;
+}
